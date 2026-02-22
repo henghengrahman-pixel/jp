@@ -114,30 +114,9 @@ body{
 .small{font-size:12px;color:var(--muted)}
 
 /* ===== BAWAH: BANDARTOTO (append) ===== */
-.bt-bottom{
-  max-width:980px;
-  margin:28px auto 56px;
-  line-height:1.75;
-  color:#e9eaee;
-
-  /* FIX RAPIN (center + box biar kebaca & serata) */
-  padding:22px 18px;
-  text-align:center;
-  background: rgba(10,10,12,.62);
-  border:1px solid rgba(255,216,107,.22);
-  border-radius:14px;
-  box-shadow:0 18px 40px rgba(0,0,0,.45);
-  backdrop-filter: blur(4px);
-  -webkit-backdrop-filter: blur(4px);
-}
-
-.bt-divider{
-  height:1px;border:0;
-  margin:0 auto 18px;
-  max-width:520px;
-  background:linear-gradient(90deg,transparent,#ffd86b,transparent);
-}
-
+.bt-bottom{max-width:980px;margin:36px auto 56px;line-height:1.75;color:#e9eaee}
+.bt-divider{height:1px;border:0;margin:0 0 24px;background:
+  linear-gradient(90deg,transparent,#ffd86b,transparent)}
 .bt-badge{
   width:84px;height:84px;margin:4px auto 10px;border-radius:50%;
   background:
@@ -147,48 +126,14 @@ body{
   border:3px solid var(--gold);
   box-shadow:0 0 16px rgba(225,182,76,.55), inset 0 0 6px rgba(0,0,0,.45)
 }
-
 .bt-h2{margin:0 0 10px;text-align:center;font-size:22px;font-weight:800;letter-spacing:.3px}
 .bt-list{margin:0 0 18px 0;padding:0;list-style:none}
-.bt-list li{margin:6px 0;padding-left:26px;position:relative;text-align:left;max-width:860px;margin-left:auto;margin-right:auto}
+.bt-list li{margin:6px 0;padding-left:26px;position:relative}
 .bt-list li::before{content:"•";position:absolute;left:10px;top:-1px;color:var(--gold);font-weight:900}
-
-.bt-title{
-  margin:6px 0 10px;
-  font-size:26px;
-  font-weight:900;
-  letter-spacing:.2px;
-  line-height:1.25;
-}
-
-.bt-lead{
-  color:#cbd0dc;
-  margin:0 auto 12px;
-  max-width:860px;
-}
-
-.bt-sub{
-  margin:16px 0 8px;
-  font-size:20px;
-  font-weight:800;
-}
-
-.bt-bottom p{
-  margin:0 auto 12px;
-  max-width:860px;
-}
-
+.bt-title{margin:18px 0 6px;font-size:26px;font-weight:900;letter-spacing:.2px}
+.bt-lead{color:#cbd0dc;margin:0 0 12px}
+.bt-sub{margin:18px 0 6px;font-size:20px;font-weight:800}
 .bt-copy{
-  margin-top:18px;
-  padding-top:16px;
-  border-top:1px solid rgba(255,216,107,.18);
-  text-align:center;
-  color:#9aa0ae;
-  font-size:12px
-}
-
-@media (max-width: 520px){
-  .bt-bottom{padding:18px 14px}
-  .bt-title{font-size:22px}
-  .bt-sub{font-size:18px}
+  margin-top:24px;padding-top:16px;border-top:1px solid var(--line);
+  text-align:center;color:#9aa0ae;font-size:12px
 }
