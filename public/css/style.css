@@ -19,7 +19,6 @@ body{
   font-family: Inter,system-ui,Arial,sans-serif;
 }
 
-
 /* --- Layout umum --- */
 .container{width:min(1180px,92%);margin:0 auto}
 
@@ -70,9 +69,41 @@ body{
 .card h5{margin:0 0 6px 0;font-size:15px;line-height:1.4;text-transform:uppercase}
 .meta{font-size:11px;color:var(--muted);margin-bottom:6px}
 .excerpt{font-size:13px;color:#d0d3dc;min-height:44px}
-.btn{display:inline-flex;align-items:center;justify-content:center;padding:10px 12px;border-radius:8px;border:1px solid transparent;cursor:pointer;text-decoration:none;font-weight:600}
-.btn.read{background:#2b62f0;color:#fff;width:100%}
-.btn.read:hover{filter:brightness(1.05)}
+
+/* --- Button base --- */
+.btn{
+  display:inline-flex;align-items:center;justify-content:center;
+  padding:10px 12px;border-radius:8px;border:1px solid transparent;
+  cursor:pointer;text-decoration:none;font-weight:700;
+}
+
+/* ===== FIX: Read More jadi GOLD + teks putih ===== */
+.btn.read{
+  width:100%;
+  background: linear-gradient(180deg, #ffd86b, #b8891f);
+  border: 1px solid #d4af37;
+  color:#fff !important;
+  box-shadow: 0 10px 22px rgba(255,215,100,.22);
+  transition: transform .18s ease, box-shadow .22s ease, filter .22s ease;
+}
+
+.btn.read:hover{
+  transform: translateY(-2px);
+  filter: brightness(1.05);
+  box-shadow: 0 14px 30px rgba(255,215,100,.40), 0 0 0 1px rgba(255,215,100,.20) inset;
+}
+
+.btn.read:active{
+  transform: translateY(0);
+  box-shadow: 0 10px 22px rgba(255,215,100,.22);
+}
+
+/* Jaga-jaga kalau ada class bootstrap .btn-primary ikut ngubah */
+.btn-primary{
+  background: linear-gradient(180deg, #ffd86b, #b8891f) !important;
+  border-color: #d4af37 !important;
+  color:#fff !important;
+}
 
 /* --- Detail --- */
 .back{background:#2b2d36;color:#fff;border:1px solid var(--line);margin:18px 0;display:inline-block}
