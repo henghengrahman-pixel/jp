@@ -10,7 +10,7 @@ html,body{margin:0;padding:0}
 img{max-width:100%;height:auto;display:block} /* gambar selalu responsif */
 body{
   background-color: var(--bg);
-  background-image: url("hhttps://static.stylecontent.xyz/MCS-Frontend/templates/Template_37/template_default/orange/images/background_img/desktop_background.jpg");
+  background-image: url("https://static.stylecontent.xyz/MCS-Frontend/templates/Template_37/template_default/orange/images/background_img/desktop_background.jpg");
   background-size: cover;
   background-position: center top;
   background-repeat: no-repeat;
